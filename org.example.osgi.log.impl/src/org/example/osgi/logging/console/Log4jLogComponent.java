@@ -2,8 +2,10 @@ package org.example.osgi.logging.console;
 
 import org.example.osgi.logging.Log;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.propertytypes.ServiceRanking;
 
-@Component(property = {"type=default"})
+@Component(property = {"type=default", "logfile=/tmp/log.txt"})
+@ServiceRanking(100)
 public class Log4jLogComponent implements Log {
 	public Log4jLogComponent() {
 		System.out.println("Log4jLogComponent created");

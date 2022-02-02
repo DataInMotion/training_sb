@@ -11,15 +11,14 @@
  */
 package org.example.osgi.hello;
 
-import java.util.List;
-
 import org.example.osgi.logging.Log;
+import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.component.annotations.ReferencePolicy;
+import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 /**
  * 
@@ -32,10 +31,11 @@ public class HelloComponent {
 //	@Reference(target = "(type=log4j)")
 	private Log log;
 	
+	
 	/**
 	 * Creates a new instance.
 	 */
-//	@Activate
+	@Activate
 //	public HelloComponent(@Reference Log log) {
 	public HelloComponent() {
 //		this.log = log;
@@ -57,10 +57,10 @@ public class HelloComponent {
 		}
 	}
 	
-	@Reference(cardinality = ReferenceCardinality.OPTIONAL, policy = ReferencePolicy.DYNAMIC, target = "(type=log4j)")
-	public void setLog(Log log) {
+	@Reference(cardinality = ReferenceCardinality.MANDATORY,  policyOption = ReferencePolicyOption.GREEDY)
+	public void setLog(Log log, ServiceReference<Log> logRef) {
 		this.log = log;
-		log.logMessage("Here I Am");
+		log.logMessage("Here I Am with props " + logRef);
 	}
 
 	public void unsetLog(Log log) {
