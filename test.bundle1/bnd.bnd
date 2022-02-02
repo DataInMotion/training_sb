@@ -1,0 +1,10 @@
+Bundle-Version: 1.2.0
+
+-buildpath: \
+	osgi.annotation;version='7.0',\
+	osgi.core;version='7.0',\
+	osgi.cmpn;version='7.0',\
+	org.apache.felix.configadmin
+	
+-include: ${.}/.settings/org.eclipse.jdt.core.prefs
+-sub: *.bnd
