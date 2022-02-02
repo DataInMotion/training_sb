@@ -4,13 +4,16 @@
 	bnd.identity;id='org.apache.felix.gogo.command',\
 	bnd.identity;id='org.apache.felix.gogo.shell',\
 	bnd.identity;id='test.bundle.2',\
-	bnd.identity;id='org.example.osgi.log.impl'
+	bnd.identity;id='org.example.osgi.log.impl',\
+	bnd.identity;id='org.example.osgi.config'
 -runbundles: \
 	org.apache.felix.configadmin;version='[1.9.8,1.9.9)',\
+	org.apache.felix.configurator;version='[1.0.6,1.0.7)',\
 	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
 	org.apache.felix.gogo.runtime;version='[1.0.10,1.0.11)',\
 	org.apache.felix.gogo.shell;version='[1.0.0,1.0.1)',\
 	org.apache.felix.scr;version='[2.1.10,2.1.11)',\
+	org.example.osgi.config;version=snapshot,\
 	org.example.osgi.log.api;version=snapshot,\
 	org.example.osgi.log.impl;version=snapshot,\
 	test.bundle.2;version=snapshot

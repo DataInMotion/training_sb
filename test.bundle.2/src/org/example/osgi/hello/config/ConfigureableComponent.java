@@ -13,10 +13,12 @@ package org.example.osgi.hello.config;
 
 import java.util.Map;
 
+import org.example.osgi.logging.Log;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Modified;
+import org.osgi.service.component.annotations.Reference;
 
 /**
  * 
@@ -26,11 +28,13 @@ import org.osgi.service.component.annotations.Modified;
 @Component(name="testconfig", property = "test=true", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class ConfigureableComponent {
 
+	@Reference(name = "log")
+	private Log log;
 	
 	@Activate
 	@Modified
 	public void activate(Map<String, String> props) {
-		System.out.println(this.toString() + " Config: " + props);
+		log.logMessage(this.toString() + " Config: " + props);
 	}
 
 	

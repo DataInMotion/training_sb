@@ -1,0 +1,15 @@
+{
+  ":configurator:resource-version": 1,
+  
+  "testconfig~config1": 
+	{
+		"workmode": "OFFLINE",
+		"testproeprty" : "test"
+	},
+  "testconfig~config2": 
+	{
+		"workmode": "ONLINE",
+		"testproeprty" : "was anderes",
+		"log.target" : "(type=log4j)"
+	}
+}

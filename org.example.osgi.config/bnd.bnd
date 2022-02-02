@@ -1,0 +1,11 @@
+-buildpath: \
+	osgi.annotation;version='7.0',\
+	osgi.core;version='7.0',\
+	osgi.cmpn;version='7.0'
+
+-resourceonly: true
+	
+-includeresource: \
+	OSGI-INF/configurator/=config/	
+	
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
