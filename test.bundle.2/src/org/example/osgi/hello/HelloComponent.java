@@ -11,6 +11,8 @@
  */
 package org.example.osgi.hello;
 
+import java.util.List;
+
 import org.example.osgi.logging.Log;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -33,19 +35,20 @@ public class HelloComponent {
 	/**
 	 * Creates a new instance.
 	 */
-	@Activate
-	public HelloComponent(@Reference Log log) {
-		this.log = log;
+//	@Activate
+//	public HelloComponent(@Reference Log log) {
+	public HelloComponent() {
+//		this.log = log;
 		System.out.println("Creating Hello World");
 	}
 	
-//	@Activate
-//	public void activate() {
-//		System.out.println("Activate");
-//		if(log != null) {
-//			log.logMessage("Activated");
-//		}
-//	}
+	@Activate
+	public void activate() {
+		System.out.println("Activate");
+		if(log != null) {
+			log.logMessage("Activated");
+		}
+	}
 
 	@Deactivate
 	public void deactivate() {

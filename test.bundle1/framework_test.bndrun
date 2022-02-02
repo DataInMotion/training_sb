@@ -1,5 +1,5 @@
 -runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
--runee: JavaSE-16
+-runee: JavaSE-11
 -runrequires: \
 	bnd.identity;id='org.apache.felix.gogo.command',\
 	bnd.identity;id='org.apache.felix.gogo.shell',\
@@ -12,5 +12,4 @@
 	org.apache.felix.scr;version='[2.1.10,2.1.11)',\
 	org.example.osgi.log.api;version=snapshot,\
 	org.example.osgi.log.impl;version=snapshot,\
-	test.bundle.2;version=snapshot,\
-	test.bundle1.impl;version=snapshot
+	test.bundle.2;version=snapshot
