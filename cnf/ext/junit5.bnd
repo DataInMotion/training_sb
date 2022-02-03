@@ -11,7 +11,7 @@ Test-Cases: ${classes;HIERARCHY_INDIRECTLY_ANNOTATED;org.junit.platform.commons.
 -buildpath.junit5: ${if;${-enable-junit5};${test.buildpath}}
 -tester: biz.aQute.tester.junit-platform
 -runproperties.junit5: ${if;${-enable-junit5};${test.runproperties}}
--runrequires.junit5: ${if;${-enable-junit5};${test.runbundles}}
+-runbundles.junit5: ${if;${-enable-junit5};${test.runbundles}}
 
 #Adds the related project to the buildpath 
 -buildpath.test_host: ${if;${-enable-junit5};${replace;${p};.tests}}
