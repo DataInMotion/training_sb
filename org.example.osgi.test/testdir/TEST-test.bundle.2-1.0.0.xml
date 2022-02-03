@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="[11] test.bundle.2;1.0.0" tests="1" skipped="0" failures="0" errors="0" time="0.174" hostname="DESKTOP-2LSCCOC" timestamp="2022-02-03T14:15:37">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="N:/git/training/examples/training_sb/cnf/cache/6.1.0/bnd-cache/biz.aQute.launcher/biz.aQute.launcher.pre.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="C:\Users\ungei\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre"/>
+<property name="java.io.tmpdir" value="C:\Users\ungei\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Users\ungei\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/ungei/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin/server;C:/Users/ungei/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin;N:\tools\java\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;n:\tools\Git\cmd;n:\tools\maven\apache-maven-3.8.2\bin\;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ungei\AppData\Local\Microsoft\WindowsApps;N:\tools\MikTex\miktex\bin\x64\;n:\tools\eclipse\training\osgi\eclipse;;."/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.1+12"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Eclipse Adoptium"/>
+<property name="java.vendor.url" value="https://adoptium.net/"/>
+<property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+<property name="java.vendor.version" value="Temurin-17.0.1+12"/>
+<property name="java.version" value="17.0.1"/>
+<property name="java.version.date" value="2021-10-19"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Eclipse Adoptium"/>
+<property name="java.vm.version" value="17.0.1+12"/>
+<property name="jdk.debug" value="release"/>
+<property name="launch.activation.eager" value="false"/>
+<property name="launch.activators" value=""/>
+<property name="launch.bundles" value="C:/Users/ungei/.m2/repository/org/assertj/assertj-core/3.20.2/assertj-core-3.20.2.jar,C:/Users/ungei/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar,C:/Users/ungei/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar,C:/Users/ungei/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar,C:/Users/ungei/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.9.8/org.apache.felix.configadmin-1.9.8.jar,C:/Users/ungei/.m2/repository/org/apache/felix/org.apache.felix.scr/2.1.10/org.apache.felix.scr-2.1.10.jar,N:/git/training/examples/training_sb/org.example.osgi.log.impl/generated/org.example.osgi.log.impl.jar,C:/Users/ungei/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar,C:/Users/ungei/.m2/repository/org/osgi/org.osgi.test.common/1.0.0/org.osgi.test.common-1.0.0.jar,C:/Users/ungei/.m2/repository/org/osgi/org.osgi.test.junit5/1.0.0/org.osgi.test.junit5-1.0.0.jar,N:/git/training/examples/training_sb/test.bundle.2/generated/test.bundle.2.jar,N:/git/training/examples/training_sb/test.bundle.2.tests/generated/test.bundle.2.tests.jar,N:/git/training/examples/training_sb/cnf/cache/6.1.0/bnd-cache/biz.aQute.tester.junit-platform/biz.aQute.tester.junit-platform-6.1.0.jar,C:/Users/ungei/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar,C:/Users/ungei/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar,C:/Users/ungei/.m2/repository/org/junit/platform/junit-platform-launcher/1.7.0/junit-platform-launcher-1.7.0.jar"/>
+<property name="launch.embedded" value="false"/>
+<property name="launch.framework.restart" value="false"/>
+<property name="launch.framework.restart.count" value="0"/>
+<property name="launch.keep" value="false"/>
+<property name="launch.name" value="mytest.bndrun"/>
+<property name="launch.noreferences" value="false"/>
+<property name="launch.notificationPort" value="57832"/>
+<property name="launch.services" value="true"/>
+<property name="launch.system.packages" value="org.osgi.dto;version=&quot;1.1.1&quot;,org.osgi.framework;version=&quot;1.10&quot;,org.osgi.framework.connect;uses:=&quot;org.osgi.framework,org.osgi.framework.launch&quot;;version=&quot;1.0&quot;,org.osgi.framework.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.8&quot;,org.osgi.framework.hooks.bundle;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1&quot;,org.osgi.framework.hooks.resolver;uses:=&quot;org.osgi.framework.wiring&quot;;version=&quot;1.0&quot;,org.osgi.framework.hooks.service;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1&quot;,org.osgi.framework.hooks.weaving;uses:=&quot;org.osgi.framework.wiring&quot;;version=&quot;1.1&quot;,org.osgi.framework.launch;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.2&quot;,org.osgi.framework.namespace;uses:=&quot;org.osgi.resource&quot;;version=&quot;1.2&quot;,org.osgi.framework.startlevel;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.0&quot;,org.osgi.framework.startlevel.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.0&quot;,org.osgi.framework.wiring;uses:=&quot;org.osgi.framework,org.osgi.resource&quot;;version=&quot;1.2&quot;,org.osgi.framework.wiring.dto;uses:=&quot;org.osgi.dto,org.osgi.resource.dto&quot;;version=&quot;1.3&quot;,org.osgi.resource;version=&quot;1.0.1&quot;,org.osgi.resource.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.0.1&quot;,org.osgi.service.condition;version=&quot;1.0&quot;,org.osgi.service.packageadmin;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.2.1&quot;,org.osgi.service.resolver;uses:=&quot;org.osgi.resource&quot;;version=&quot;1.1.1&quot;,org.osgi.service.startlevel;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1.1&quot;,org.osgi.service.url;version=&quot;1.0.1&quot;,org.osgi.util.tracker;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.5.3&quot;"/>
+<property name="launch.timeout" value="0"/>
+<property name="launch.trace" value="false"/>
+<property name="launcher.properties" value="N:\git\training\examples\training_sb\org.example.osgi.test\generated\launch15805413977738293842.properties"/>
+<property name="launcher.runpath" value="C:/Users/ungei/.m2/repository/org/apache/felix/org.apache.felix.framework/7.0.3/org.apache.felix.framework-7.0.3.jar,N:/git/training/examples/training_sb/cnf/cache/6.1.0/bnd-cache/biz.aQute.launcher/biz.aQute.launcher-6.1.0.jar"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="org.osgi.framework.storage.clean" value="onFirstInit"/>
+<property name="org.osgi.framework.system.packages.extra" value="org.osgi.dto;version=&quot;1.1.1&quot;,org.osgi.framework;version=&quot;1.10&quot;,org.osgi.framework.connect;uses:=&quot;org.osgi.framework,org.osgi.framework.launch&quot;;version=&quot;1.0&quot;,org.osgi.framework.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.8&quot;,org.osgi.framework.hooks.bundle;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1&quot;,org.osgi.framework.hooks.resolver;uses:=&quot;org.osgi.framework.wiring&quot;;version=&quot;1.0&quot;,org.osgi.framework.hooks.service;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1&quot;,org.osgi.framework.hooks.weaving;uses:=&quot;org.osgi.framework.wiring&quot;;version=&quot;1.1&quot;,org.osgi.framework.launch;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.2&quot;,org.osgi.framework.namespace;uses:=&quot;org.osgi.resource&quot;;version=&quot;1.2&quot;,org.osgi.framework.startlevel;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.0&quot;,org.osgi.framework.startlevel.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.0&quot;,org.osgi.framework.wiring;uses:=&quot;org.osgi.framework,org.osgi.resource&quot;;version=&quot;1.2&quot;,org.osgi.framework.wiring.dto;uses:=&quot;org.osgi.dto,org.osgi.resource.dto&quot;;version=&quot;1.3&quot;,org.osgi.resource;version=&quot;1.0.1&quot;,org.osgi.resource.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.0.1&quot;,org.osgi.service.condition;version=&quot;1.0&quot;,org.osgi.service.packageadmin;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.2.1&quot;,org.osgi.service.resolver;uses:=&quot;org.osgi.resource&quot;;version=&quot;1.1.1&quot;,org.osgi.service.startlevel;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1.1&quot;,org.osgi.service.url;version=&quot;1.0.1&quot;,org.osgi.util.tracker;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.5.3&quot;"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 10"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Users\ungei\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="aQute.launcher.pre.EmbeddedLauncher"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="tester.continuous" value="true"/>
+<property name="tester.trace" value="true"/>
+<property name="user.country" value="US"/>
+<property name="user.country.format" value="DE"/>
+<property name="user.dir" value="N:\git\training\examples\training_sb\org.example.osgi.test"/>
+<property name="user.home" value="C:\Users\ungei"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="ungei"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Europe/Berlin"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="testEventAdminExists(Log)" classname="org.exmple.osgi.test.ExampleIntegrationTest" time="0.114">
+<system-out><![CDATA[Log4jLogComponent created
+LOG: test
+]]></system-out>
+</testcase>
+</testsuite>
