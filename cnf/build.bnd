@@ -67,15 +67,43 @@
 
 -releaserepo: Release
 -baselinerepo: Release
+-baseline.all:\
+	!org.*.internal.*,\
+	* 
+-diffignore: Bnd-LastModified 
+-groupid: org.example.osgi
+-pom: true
 
--include: \
-	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_run.bnd
+#-include: \
+#	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_run.bnd
 #	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgitest_junit5.bnd
+
+
+# define global blacklist
+-runblacklist.default: osgi.identity;filter:='(osgi.identity=osgi.cmpn)'
+
+# > Java 8 runtime
+modules: --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.security=ALL-UNNAMED
+-runvm.default: ${if;${isempty;${system_allow_fail;java --list-modules}};;${modules}}
+
+
+-resolve.effective: active
+#-resolve.effective: active;skip:="osgi.service"
+
+# This will help us keep -runbundles sorted
+-runstartlevel: \
+    order=sortbynameversion,\
+    begin=-1
 
 # Always use contracts
 -contract: *
 
 Bundle-Vendor: Wir
+
+#-include: ${if;${def;release;false};\
+#		${.}/releng/snapshot.bnd;\
+#		${.}/releng/release.bnd\
+#	}
 
 # Set Git revision information in the manifests of built bundles
 #Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}

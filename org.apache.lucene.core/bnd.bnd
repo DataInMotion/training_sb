@@ -1,0 +1,13 @@
+Bundle-Version: 8.4.1
+-buildpath: org.apache.lucene:lucene-core;version=8.4.1
+
+Export-Package: *
+
+Import-Package: sun.misc;resolution:=optional,\
+	com.sun.management;resolution:=optional,\
+	*
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-core;8.4.1}!/META-INF/services/*,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-core:jar:sources;8.4.1;EXACT}
+	

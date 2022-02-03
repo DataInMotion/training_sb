@@ -1,36 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1643877350449">
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.example.osgi.log.api"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.2.0" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.example.osgi.log.api"/>
-      <attribute name="bundle-version" value="1.2.0" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.example.osgi.logging"/>
-      <attribute name="bnd.hashes" value="76580,-1923478059" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.2.0" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.example.osgi.log.api"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.2.0" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.example.osgi.log.api"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="3206" type="Long"/>
-      <attribute name="url" value="org.example.osgi.log.api/org.example.osgi.log.api-1.2.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="FCCD6802FC609EFB56109082BD705313D1A3A95C1324559FC8E552672B85556D"/>
-    </capability>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
-    </requirement>
-  </resource>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.example.osgi.log.impl"/>
@@ -70,22 +39,50 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="test.bundle1"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.2.0" type="Version"/>
+      <attribute name="bundle-version" value="0.0.0" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="test.bundle1"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.2.0" type="Version"/>
+      <attribute name="bundle-version" value="0.0.0" type="Version"/>
       <attribute name="osgi.wiring.host" value="test.bundle1"/>
     </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="440" type="Long"/>
-      <attribute name="url" value="test.bundle1/test.bundle1-1.2.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="CB0F8E76CB21201A75703B846051CAA9130E639253D6BA15238478A9A871D03C"/>
+    <capability namespace="bnd.mainclass">
+      <attribute name="bnd.mainclass" value="aQute.launcher.pre.EmbeddedLauncher"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
     </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3223185" type="Long"/>
+      <attribute name="url" value="test.bundle1/test.bundle1-0.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="3FB95E349B470D7FC3DB4E19D8A65CC0EDD3264384469F4309B2A4567173EB68"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.example.osgi.config"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.example.osgi.config"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.example.osgi.config"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="1057" type="Long"/>
+      <attribute name="url" value="org.example.osgi.config/org.example.osgi.config-0.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="43C12B885B39C5EBAA4F48E22CC57DD22979F4F010437B67C361AC054D30C26F"/>
+    </capability>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(osgi.extender=osgi.configurator)"/>
+    </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
@@ -155,51 +152,54 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.example.osgi.config"/>
+      <attribute name="osgi.identity" value="org.example.osgi.log.api"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.example.osgi.log.api"/>
+      <attribute name="bundle-version" value="1.2.0" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.example.osgi.logging"/>
+      <attribute name="bnd.hashes" value="76580,-1923478059" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.example.osgi.config"/>
+      <attribute name="bundle-version" value="1.2.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.example.osgi.log.api"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.example.osgi.config"/>
+      <attribute name="bundle-version" value="1.2.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.example.osgi.log.api"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="1057" type="Long"/>
-      <attribute name="url" value="org.example.osgi.config/org.example.osgi.config-0.0.0.jar"/>
+      <attribute name="size" value="3206" type="Long"/>
+      <attribute name="url" value="org.example.osgi.log.api/org.example.osgi.log.api-1.2.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="43C12B885B39C5EBAA4F48E22CC57DD22979F4F010437B67C361AC054D30C26F"/>
+      <attribute name="osgi.content" value="FCCD6802FC609EFB56109082BD705313D1A3A95C1324559FC8E552672B85556D"/>
     </capability>
-    <requirement namespace="osgi.extender">
-      <directive name="filter" value="(osgi.extender=osgi.configurator)"/>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
     </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="test.bundle1"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="0.0.0" type="Version"/>
+      <attribute name="bundle-version" value="1.2.0" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="test.bundle1"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="0.0.0" type="Version"/>
+      <attribute name="bundle-version" value="1.2.0" type="Version"/>
       <attribute name="osgi.wiring.host" value="test.bundle1"/>
     </capability>
-    <capability namespace="bnd.mainclass">
-      <attribute name="bnd.mainclass" value="aQute.launcher.pre.EmbeddedLauncher"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-    </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="3223185" type="Long"/>
-      <attribute name="url" value="test.bundle1/test.bundle1-0.0.0.jar"/>
+      <attribute name="size" value="440" type="Long"/>
+      <attribute name="url" value="test.bundle1/test.bundle1-1.2.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="3FB95E349B470D7FC3DB4E19D8A65CC0EDD3264384469F4309B2A4567173EB68"/>
+      <attribute name="osgi.content" value="CB0F8E76CB21201A75703B846051CAA9130E639253D6BA15238478A9A871D03C"/>
     </capability>
   </resource>
 </repository>

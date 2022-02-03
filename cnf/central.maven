@@ -1,2 +1,6 @@
 # List repository contents using GAV coordinates
 org.apache.felix:org.apache.felix.framework:7.0.3
+
+org.apache.lucene:lucene-core:8.4.1
+org.apache.lucene:lucene-core:jar:sources:8.4.1
+

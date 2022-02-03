@@ -1,4 +1,11 @@
-Bundle-Version: 1.2.0
+Bundle-Version: 1.3.0
+
+Export-Package: org.example.osgi.logging
+
+-privatepackage: org.example.osgi.logging.console
+
+-baseline: !org.example.osgi.logging.console.,\
+	*
 
 -buildpath: \
 	osgi.annotation;version='7.0',\

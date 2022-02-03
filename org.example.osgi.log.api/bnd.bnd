@@ -1,4 +1,6 @@
-Bundle-Version: 1.2.0
+Bundle-Version: 1.3.0-SNAPSHOT
+
+-baseline: !*
 
 -buildpath: \
 	osgi.annotation;version='7.0',\
