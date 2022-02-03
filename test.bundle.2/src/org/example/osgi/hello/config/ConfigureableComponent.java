@@ -19,6 +19,8 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Modified;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
 /**
  * 
@@ -26,15 +28,23 @@ import org.osgi.service.component.annotations.Reference;
  * @since 2 Feb 2022
  */
 @Component(name="testconfig", property = "test=true", configurationPolicy = ConfigurationPolicy.REQUIRE)
+@Designate(ocd = ConfigureableComponent.Config.class)
 public class ConfigureableComponent {
 
+	@ObjectClassDefinition
+	@interface Config {
+		String test() default "true";
+		int something() default 5;
+	}
+	
 	@Reference(name = "log")
 	private Log log;
 	
 	@Activate
 	@Modified
-	public void activate(Map<String, String> props) {
-		log.logMessage(this.toString() + " Config: " + props);
+	public void activate(Map<String, String> props, Config config) {
+		log.logMessage(this.toString() + " props: " + props);
+		log.logMessage(this.toString() + " Config: " + config.test() + " - " + config.something());
 	}
 
 	

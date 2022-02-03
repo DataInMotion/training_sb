@@ -7,4 +7,5 @@ Bundle-Version: 1.2.0
 	org.apache.felix.configadmin
 	
 -include: ${.}/.settings/org.eclipse.jdt.core.prefs
--sub: *.bnd
+
+-export: framework_test.bndrun;name=ditribution.zip

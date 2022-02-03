@@ -40,6 +40,13 @@
 		index=${.}/central.maven; \
 		readOnly=true; \
 		name="Maven Central"
+
+-plugin.6.SB_Artifactory: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository; \
+		releaseUrl=https://repo.maven.apache.org/maven2/; \
+		index=${.}/artifactory.maven; \
+		readOnly=true; \
+		name="SB Artifactory"
 -plugin.7.Local: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Local; \
@@ -63,6 +70,7 @@
 
 -include: \
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_run.bnd
+#	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgitest_junit5.bnd
 
 # Always use contracts
 -contract: *
@@ -72,10 +80,3 @@ Bundle-Vendor: Wir
 # Set Git revision information in the manifests of built bundles
 #Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}
 #Git-SHA:                  ${system-allow-fail;git rev-list -1 HEAD}
-
-# JUnit
-junit: org.apache.servicemix.bundles.junit; version=4.12
-mockito: org.mockito.mockito-core; version=2.13.0
-mockito-deps: org.objenesis; version=2.6.0,\
-  net.bytebuddy.byte-buddy; version=1.7.9,\
-  net.bytebuddy.byte-buddy-agent; version=1.7.9 
