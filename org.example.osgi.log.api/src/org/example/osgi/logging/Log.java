@@ -5,4 +5,6 @@ import org.osgi.annotation.versioning.ProviderType;
 @ProviderType
 public interface Log {
 	void logMessage(String message);
+	
+	String toUpper(String text);
 }

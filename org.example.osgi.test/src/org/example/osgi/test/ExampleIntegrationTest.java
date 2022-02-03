@@ -51,5 +51,23 @@ public class ExampleIntegrationTest {
 		
 		log.logMessage("test");
 	}
+
+	@Test
+	public void testNewLogServiceMethodLog4J(@InjectService(filter = "(type=log4j)") Log log) {
+		assertThat(log).isNotNull();
+		
+		String result = log.toUpper("test");
+		assertThat(result).isEqualTo("test".toUpperCase());
+		
+	}
+
+	@Test
+	public void testNewLogServiceMethodDefault(@InjectService(filter = "(type=default)") Log log) {
+		assertThat(log).isNotNull();
+		
+		String result = log.toUpper("test");
+		assertThat(result).isEqualTo("test".toUpperCase());
+		
+	}
 	
 }

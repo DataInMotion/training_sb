@@ -1,1 +1,24 @@
 // Available to customize the build
+tasks.register('itest'){
+  subprojects.each { sp ->
+    sp.tasks.each { t -> 
+      if(t.name ==~ "resolve\\.(test|export)(.*)?"){
+        dependsOn t
+      }
+    }
+  }
+  subprojects.each { sp ->
+    sp.tasks.each { t -> 
+      if(t.name ==~ "testrun\\.test(.*)?"){
+        dependsOn t
+      }
+    }
+  }
+  subprojects.each { sp ->
+    sp.tasks.each { t -> 
+      if(t.name ==~ "export\\.export(.*)?"){
+        dependsOn t
+      }
+    }
+  }
+}

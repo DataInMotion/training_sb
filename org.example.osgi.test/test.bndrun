@@ -1,0 +1,20 @@
+-buildpath.junit5: ${test.buildpath}
+-tester: biz.aQute.tester.junit-platform
+-runproperties.junit5: ${test.runproperties}
+-runbundles.junit5: ${test.runbundles}
+
+-runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
+-runee: JavaSE-11
+-runrequires: bnd.identity;id='org.example.osgi.test'
+-runbundles: \
+	assertj-core;version='[3.20.2,3.20.3)',\
+	junit-jupiter-api;version='[5.7.0,5.7.1)',\
+	junit-jupiter-params;version='[5.7.0,5.7.1)',\
+	junit-platform-commons;version='[1.7.0,1.7.1)',\
+	org.example.osgi.log.api;version=snapshot,\
+	org.example.osgi.test;version=snapshot,\
+	org.opentest4j;version='[1.2.0,1.2.1)',\
+	org.osgi.test.common;version='[1.0.0,1.0.1)',\
+	org.osgi.test.junit5;version='[1.0.0,1.0.1)'
+	
+-runtrace: true
